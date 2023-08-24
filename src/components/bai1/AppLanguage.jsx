@@ -5,11 +5,21 @@ function AppLanguage() {
 
     // kế thừa Context của cha và logic in ra dữ liệu
     const language = useContext(exLangueContext);
+    const getContent = () => {
+        switch (language.defaultLanguage) {
+            case 'en':
+                return 'I love IT!';
+            case 'vn':
+                return 'Tôi yêu công nghệ thông tin!';
+            default:
+                return 'Xin Chào';
+        }
+    };
     return (
         <div>
             <div>
                 <hr />
-                <p>{language.defaultLanguage === 'en' ? 'I love IT!' : language.defaultLanguage === 'vn' ? 'Tôi yêu công nghệ thông tin !' : 'Xin Chào'}</p>
+                <p>{getContent()}</p>
             </div>
 
         </div>
