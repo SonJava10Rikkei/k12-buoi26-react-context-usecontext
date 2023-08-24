@@ -1,5 +1,5 @@
 import React from 'react'
-import { AuthContextProvider } from './AuthContext'
+import AuthContextProvider from './AuthContext'
 import LoginForm from './LoginForm'
 import Home from './Home'
 

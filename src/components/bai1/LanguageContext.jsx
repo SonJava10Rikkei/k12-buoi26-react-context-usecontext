@@ -19,4 +19,4 @@ function LanguageContext() {
     )
 }
 
-export default LanguageContext
+export default LanguageContext;

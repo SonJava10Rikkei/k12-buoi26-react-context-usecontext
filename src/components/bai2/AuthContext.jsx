@@ -6,7 +6,7 @@ export function useAuthContext() {
     return useContext(AuthContext);
 }
 
-export function AuthContextProvider({ children }) {
+function AuthContextProvider({ children }) {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     return (
         <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn }}>
@@ -14,3 +14,6 @@ export function AuthContextProvider({ children }) {
         </AuthContext.Provider>
     );
 }
+
+export default AuthContextProvider;
+// export { useAuthContext };
